@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企画書 - 谷口彩菜 デジタル写真集発売記念イベント</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: #333;
+            background: #fff;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 15mm;
+            background: #fff;
+        }
+
+        /* Cover Page */
+        .cover {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: calc(297mm - 30mm);
+        }
+
+        .cover-badge {
+            display: inline-block;
+            padding: 8px 24px;
+            background: linear-gradient(135deg, #e91e63, #c2185b);
+            color: #fff;
+            font-size: 12pt;
+            font-weight: 500;
+            border-radius: 50px;
+            margin-bottom: 40px;
+        }
+
+        .cover-title {
+            font-size: 28pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .cover-subtitle {
+            font-size: 18pt;
+            color: #e91e63;
+            font-weight: 500;
+            margin-bottom: 60px;
+        }
+
+        .cover-info {
+            font-size: 14pt;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .cover-date {
+            font-size: 20pt;
+            font-weight: 700;
+            color: #c2185b;
+            margin-bottom: 60px;
+        }
+
+        .cover-footer {
+            margin-top: auto;
+            padding-top: 60px;
+        }
+
+        .cover-footer p {
+            font-size: 10pt;
+            color: #999;
+        }
+
+        /* Content Pages */
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 16pt;
+            font-weight: 700;
+            color: #c2185b;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e91e63;
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 12pt;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 12px;
+            padding-left: 12px;
+            border-left: 4px solid #e91e63;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+        }
+
+        th,
+        td {
+            padding: 10px 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #f8f0f3;
+            font-weight: 500;
+            color: #c2185b;
+            width: 120px;
+        }
+
+        td {
+            background: #fff;
+        }
+
+        /* Schedule Table */
+        .schedule-table th {
+            width: 80px;
+            text-align: center;
+        }
+
+        .schedule-table .time {
+            font-weight: 700;
+            color: #c2185b;
+        }
+
+        .schedule-table .content-title {
+            font-weight: 500;
+        }
+
+        /* List */
+        ul {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #fff0f5, #fff);
+            border: 1px solid #f8bbd9;
+            border-left: 4px solid #e91e63;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            color: #c2185b;
+            font-size: 11pt;
+            margin-bottom: 8px;
+        }
+
+        /* Grid Layout */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .card h4 {
+            color: #c2185b;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card p {
+            font-size: 10pt;
+            color: #666;
+        }
+
+        /* Page Header */
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 24px;
+        }
+
+        .page-header h2 {
+            font-size: 10pt;
+            color: #999;
+        }
+
+        .page-header .page-num {
+            font-size: 10pt;
+            color: #999;
+        }
+
+        /* Footer */
+        .page-footer {
+            position: absolute;
+            bottom: 15mm;
+            right: 15mm;
+            font-size: 9pt;
+            color: #999;
+        }
+
+        .note {
+            font-size: 10pt;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .important {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 12px;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+
+        .important strong {
+            color: #856404;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page 1: Cover -->
+    <div class="page cover">
+        <span class="cover-badge">📕 企画書</span>
+        <h1 class="cover-title">デジタル写真集発売記念イベント</h1>
+        <p class="cover-subtitle">谷口彩菜</p>
+        <p class="cover-info">開催日時</p>
+        <p class="cover-date">2026年2月14日（土）13:00〜14:30</p>
+        <p class="cover-info">会場：ニコナコーヒー（千駄ヶ谷）</p>
+        <div class="cover-footer">
+            <p>作成日：2026年1月12日</p>
+            <p>GATE</p>
+        </div>
+    </div>
+
+    <!-- Page 2: Overview -->
+    <div class="page page-break">
+        <div class="page-header">
+            <h2>谷口彩菜 デジタル写真集発売記念イベント 企画書</h2>
+            <span class="page-num">2 / 4</span>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">1. イベント概要</h3>
+            <table>
+                <tr>
+                    <th>イベント名</th>
+                    <td>谷口彩菜 デジタル写真集発売記念イベント</td>
+                </tr>
+                <tr>
+                    <th>開催日時</th>
+                    <td>2026年2月14日（土）13:00〜14:30（約90分）</td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td>ニコナコーヒー<br>〒151-0051 東京都渋谷区千駄ヶ谷2-37-8 五月女ビル 1F</td>
+                </tr>
+                <tr>
+                    <th>出演</th>
+                    <td>谷口彩菜</td>
+                </tr>
+                <tr>
+                    <th>主催</th>
+                    <td>GATE</td>
+                </tr>
+                <tr>
+                    <th>チケット販売</th>
+                    <td>tiget（チゲット）</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">2. 企画コンセプト</h3>
+            <div class="highlight-box">
+                <h4>「バレンタインに届ける、とっておきの一瞬」</h4>
+                <p>2月14日バレンタインデーという特別な日に、デジタル写真集の発売を記念したファン感謝イベントを開催。谷口彩菜とファンが直接交流できる、プレミアムな体験を提供します。</p>
+            </div>
+            <h4 class="section-subtitle">ターゲット</h4>
+            <ul>
+                <li>谷口彩菜のファン層（20〜40代男性中心）</li>
+                <li>週刊ヤングジャンプ読者</li>
+                <li>グラビア・写真集愛好家</li>
+            </ul>
+            <h4 class="section-subtitle">イベントの目的</h4>
+            <ul>
+                <li>デジタル写真集の販売促進</li>
+                <li>ファンとの直接交流によるエンゲージメント強化</li>
+                <li>SNS拡散による話題性創出</li>
+                <li>今後の活動に向けたファンベース拡大</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page 3: Schedule & Contents -->
+    <div class="page page-break">
+        <div class="page-header">
+            <h2>谷口彩菜 デジタル写真集発売記念イベント 企画書</h2>
+            <span class="page-num">3 / 4</span>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">3. タイムスケジュール（約90分）</h3>
+            <table class="schedule-table">
+                <tr>
+                    <th>時間</th>
+                    <th>所要</th>
+                    <th>内容</th>
+                </tr>
+                <tr>
+                    <td class="time">13:00</td>
+                    <td>15分</td>
+                    <td>
+                        <span class="content-title">開場・受付開始</span><br>
+                        チケット確認、ガチャガチャコーナー開放
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">13:15</td>
+                    <td>10分</td>
+                    <td>
+                        <span class="content-title">オープニング</span><br>
+                        谷口彩菜登壇、写真集の見どころ紹介
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">13:25</td>
+                    <td>30分</td>
+                    <td>
+                        <span class="content-title">📣 スペシャルトークショー</span><br>
+                        撮影秘話、制作裏話、質問コーナー
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">13:55</td>
+                    <td>30分</td>
+                    <td>
+                        <span class="content-title">✍️ サイン会</span><br>
+                        直筆サイン本お渡し、ファンとの交流
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">14:25</td>
+                    <td>5分</td>
+                    <td>
+                        <span class="content-title">エンディング</span><br>
+                        終了挨拶、物販・ガチャガチャ継続
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">4. コンテンツ詳細</h3>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>🎤 スペシャルトークショー</h4>
+                    <p>撮影地でのエピソード、衣装やポーズへのこだわり、制作秘話など、ここでしか聞けない貴重なトークを提供。ファンからの質問にも回答。</p>
+                </div>
+                <div class="card">
+                    <h4>✍️ サイン会</h4>
+                    <p>谷口彩菜が目の前で直筆サイン。短時間ながらファンと直接会話できる特別な時間を創出。</p>
+                </div>
+                <div class="card">
+                    <h4>🎰 ガチャガチャ</h4>
+                    <p>限定グッズが当たるガチャガチャコーナーを設置。レアアイテムでコレクション欲を刺激し、SNS投稿を促進。</p>
+                </div>
+                <div class="card">
+                    <h4>☕ コラボドリンク</h4>
+                    <p>ニコナコーヒーとのコラボレーション限定ドリンクを提供。イベント限定メニューで特別感を演出。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Ticket & Access -->
+    <div class="page page-break">
+        <div class="page-header">
+            <h2>谷口彩菜 デジタル写真集発売記念イベント 企画書</h2>
+            <span class="page-num">4 / 4</span>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">5. チケット情報（仮）</h3>
+            <table>
+                <tr>
+                    <th>券種</th>
+                    <th>価格（税込）</th>
+                    <th>内容</th>
+                </tr>
+                <tr>
+                    <td><strong>スタンダード</strong></td>
+                    <td>¥5,500</td>
+                    <td>入場券、デジタル写真集、チェキ1枚、サイン本、限定デジタル特典</td>
+                </tr>
+                <tr>
+                    <td><strong>プレミアム</strong></td>
+                    <td>¥8,800</td>
+                    <td>入場券（優先入場）、デジタル写真集、チェキ2枚、サイン本、限定デジタル特典、特製ポストカード</td>
+                </tr>
+            </table>
+            <p class="note">※ 上記は仮の内容です。価格・特典は変更になる場合があります。</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">6. 会場アクセス</h3>
+            <table>
+                <tr>
+                    <th>会場名</th>
+                    <td>ニコナコーヒー</td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td>〒151-0051 東京都渋谷区千駄ヶ谷2-37-8 五月女ビル 1F</td>
+                </tr>
+                <tr>
+                    <th>アクセス</th>
+                    <td>
+                        ・東京メトロ副都心線「北参道駅」徒歩約6分<br>
+                        ・都営大江戸線「国立競技場駅」徒歩約6分<br>
+                        ・JR中央線「千駄ケ谷駅」徒歩約8分
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">7. 今後のスケジュール</h3>
+            <table>
+                <tr>
+                    <th>1月中旬</th>
+                    <td>企画書確定、LP公開準備</td>
+                </tr>
+                <tr>
+                    <th>1月下旬</th>
+                    <td>LP公開、チケット販売開始</td>
+                </tr>
+                <tr>
+                    <th>2月上旬</th>
+                    <td>告知強化、SNSプロモーション</td>
+                </tr>
+                <tr>
+                    <th>2月14日</th>
+                    <td>イベント当日</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="important">
+            <strong>📌 確認事項</strong>
+            <ul style="margin-top: 8px; margin-bottom: 0;">
+                <li>チケット販売開始日の確定</li>
+                <li>ガチャガチャ景品の決定</li>
+                <li>コラボドリンクメニューの確定</li>
+                <li>LP用写真素材の準備</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
