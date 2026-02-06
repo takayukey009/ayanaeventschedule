@@ -2,449 +2,608 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="谷口彩菜 デジタル写真集発売記念イベント 2026年2月14日(土) バレンタインデー開催 @ニコナコーヒー">
-  <meta name="keywords" content="谷口彩菜, 写真集, Young Jump, ヤングジャンプ, グラビア, イベント, バレンタイン">
-  <title>谷口彩菜 デジタル写真集発売記念イベント | 2026.2.14 Valentine's Day</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>概要ブック: YJ photobook 発売記念イベント</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            /* Elegant / Gorgeous Theme */
+            --theme-primary: #B22222;
+            /* Deep Red / Wine */
+            --theme-accent: #C5A059;
+            /* Muted Gold */
+            --theme-light: #FFF0F5;
+            /* Pale Pink */
+            --text-main: #333333;
+            --text-light: #666666;
+            --bg-body: #FAFAFA;
+            --bg-card: #ffffff;
+            --border-color: #E6E6E6;
+        }
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            min-height: 100vh;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+            border-top: 8px solid var(--theme-primary);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #fff 0%, #fffbfb 100%);
+            color: var(--theme-primary);
+            padding: 4rem 2.5rem;
+            position: relative;
+            text-align: center;
+            border-bottom: 1px solid var(--theme-accent);
+        }
+
+        .report-meta {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 1.1rem;
+            color: var(--theme-accent);
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+            color: var(--theme-primary);
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        /* Content */
+        main {
+            padding: 3rem 2.5rem;
+        }
+
+        .section {
+            margin-bottom: 4.5rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--theme-accent);
+            padding-bottom: 0.8rem;
+        }
+
+        .section-number {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 2rem;
+            color: var(--theme-accent);
+            margin-right: 1rem;
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--theme-primary);
+            letter-spacing: 1px;
+        }
+
+        /* Executive Summary Box */
+        .exec-summary {
+            background-color: var(--theme-light);
+            border: 1px solid var(--theme-accent);
+            /* border-radius: 8px; */
+            padding: 2rem;
+            margin-bottom: 3.5rem;
+            position: relative;
+        }
+
+        .exec-summary::before {
+            content: '♦';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-card);
+            padding: 0 10px;
+            color: var(--theme-accent);
+        }
+
+        .exec-summary h3 {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 1rem;
+            color: var(--theme-primary);
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+
+        /* Cards & Tables */
+        .strategy-card {
+            margin-bottom: 2.5rem;
+        }
+
+        .strategy-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 1.2rem;
+            padding-left: 12px;
+            border-left: 4px solid var(--theme-primary);
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+        }
+
+        th {
+            background-color: var(--theme-primary);
+            color: white;
+            padding: 14px;
+            text-align: center;
+            font-weight: 500;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+            background: white;
+        }
+
+        td:first-child {
+            text-align: center;
+            font-weight: bold;
+            color: var(--theme-primary);
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+
+        /* Key Metrics / Decision Points */
+        .decision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .decision-box {
+            border: 1px solid var(--border-color);
+            padding: 1.8rem;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .decision-box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--theme-accent);
+        }
+
+        .decision-title {
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border: 1px solid currentColor;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .status-badge.urgent {
+            color: #d32f2f;
+            border-color: #d32f2f;
+            background: #fffafa;
+        }
+
+        .status-badge.pending {
+            color: #f57c00;
+            border-color: #f57c00;
+            background: #fff3e0;
+        }
+
+        .status-badge.check {
+            color: #388e3c;
+            border-color: #388e3c;
+            background: #e8f5e9;
+        }
+
+        /* Timeline View */
+        .timeline-view {
+            border-left: 1px solid var(--theme-accent);
+            padding-left: 2rem;
+            margin-left: 1rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            background: var(--theme-accent);
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 0 0 1px var(--theme-accent);
+        }
+
+        .time-col {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-weight: 700;
+            color: var(--theme-primary);
+            margin-bottom: 0.4rem;
+            font-size: 1.1rem;
+        }
+
+        .event-detail {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.4rem;
+            line-height: 1.6;
+            background: #f9f9f9;
+            padding: 0.8rem;
+            border-left: 2px solid #ddd;
+        }
+
+        .event-detail strong {
+            color: var(--text-main);
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            header {
+                padding: 3rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            main {
+                padding: 1.5rem;
+            }
+
+            .timeline-view {
+                padding-left: 1.5rem;
+                margin-left: 0.5rem;
+            }
+
+            .timeline-item::before {
+                left: -1.85rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Modern Effects -->
-  <div class="overlay-texture"></div>
-  <div class="aurora-background">
-    <div class="aurora-blob"></div>
-    <div class="aurora-blob"></div>
-    <div class="aurora-blob"></div>
-  </div>
 
-  <!-- Header -->
-  <header class="header" id="header">
     <div class="container">
-      <div class="header-inner">
-        <a href="#" class="logo">GATE</a>
-        <nav>
-          <ul class="nav-list" id="navList">
-            <li><a href="#about" class="nav-link">写真集について</a></li>
-            <li><a href="#schedule" class="nav-link">スケジュール</a></li>
-            <li><a href="#benefits" class="nav-link">参加特典</a></li>
-            <li><a href="#ticket" class="nav-link">チケット</a></li>
-            <li><a href="#access" class="nav-link">アクセス</a></li>
-            <li><a href="#faq" class="nav-link">FAQ</a></li>
-          </ul>
-          <button class="menu-btn" id="menuBtn" aria-label="メニュー">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </nav>
-      </div>
-    </div>
-  </header>
+        <header>
+            <div class="report-meta">YJ photobook 発売記念イベント</div>
+            <h1>概要ブック</h1>
+            <div class="subtitle">2026.02.14 Sat / Nicona Coffee</div>
+        </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-visual">
-      <img src="images/hero.jpg" alt="谷口彩菜 YJ PHOTO BOOK" class="hero-img">
-    </div>
-    <div class="hero-bg"></div>
-    <div class="particles">
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-    </div>
-    <div class="hero-content">
-      <span class="hero-badge">💝 バレンタインデースペシャルイベント</span>
-      <p class="hero-date">2026.2.14 SAT 13:00</p>
-      <h1 class="hero-title">
-        <span class="name">谷口彩菜</span>
-        デジタル写真集発売記念イベント
-      </h1>
-      <p class="hero-subtitle">@ニコナコーヒー / 千駄ヶ谷</p>
-      <a href="#ticket" class="btn btn-primary">
-        チケット情報を見る
-      </a>
-    </div>
-    <div class="scroll-indicator">
-      <span></span>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image fade-in-left">
-          <div class="about-image-wrapper">
-            <a href="https://yjump.jp/4pSVpif" target="_blank" rel="noopener noreferrer">
-              <img src="images/cover.jpg" alt="谷口彩菜 デジタル写真集カバー" class="about-cover-img">
-            </a>
-          </div>
-        </div>
-        <div class="about-content fade-in-right">
-          <h2>ヤングジャンプ デジタル写真集発売記念 連動イベント</h2>
-          <p class="about-text">
-            谷口彩菜が、【デジタル限定 YJ PHOTO BOOK】をリリース。
-            2月14日のバレンタインデーに、ファンの皆様だけに届ける特別なイベントを開催します。
-            撮影の裏側を語るトークショーや、イベント限定ガチャなど、
-            この日だけの特別なコンテンツをお届けします。<br>
-            <span style="font-size: 0.9em; color: var(--color-text-muted);">※イベント内容は予告なく変更になる可能性があります</span>
-            <strong
-              style="display: block; margin-top: 1rem; color: var(--color-primary-dark);">さらに、発売中の本誌をご持参の方への「サイン会」も緊急決定！</strong>
-          </p>
-          <div class="about-features">
-            <div class="feature-item">
-              <div class="feature-icon">📸</div>
-              <span class="feature-text">【デジタル限定 YJ PHOTO BOOK】谷口彩菜　写真集</span>
+        <main>
+            <!-- Executive Summary -->
+            <div class="exec-summary">
+                <h3>開催コンセプト</h3>
+                <p style="text-align: center;">
+                    「普段から応援してくれているファン、今回のYJグラビアで知ってもらったファンに向けての交流イベント。<br>メインは、トークショーとグッズ（限定ガチャ）」</p>
             </div>
-            <div class="feature-item">
-              <div class="feature-icon">🎬</div>
-              <span class="feature-text">撮影秘話を語るスペシャルトークショー</span>
+
+            <!-- FC VIP Strategy -->
+            <div class="strategy-card" style="border-left: 4px solid #C5A059; background: #fffbf0; padding: 1.5rem;">
+                <h3 style="color: #C5A059; border-left: none; padding-left: 0;">★ FC VIP会員 限定特典</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><strong>① 優先入場 & 前方席確約:</strong> 一般開場よりも早くご案内し、最前列エリアをキープ。</li>
+                    <li><strong>② 限定お土産:</strong> VIP限定の非売品ポストカード（直筆メッセ入り）をプレゼント。</li>
+                </ul>
             </div>
-            <div class="feature-item">
-              <div class="feature-icon">✨</div>
-              <span class="feature-text">本誌サイン会</span>
+
+            <!-- Section 1: Gacha Strategy -->
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-number">01</div>
+                    <h2>ガチャ施策</h2>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>商品構成 (計100本予定)</h3>
+                    <p style="margin-bottom: 1rem;">
+                        <strong>運用フロー:</strong> 受付にてコイン購入 → ガチャ → カプセル内の「引換券」をカウンターで交換<br>
+                        <strong>単価:</strong> ¥1,000 / 回（1回につき5回まで・ループ可）
+                    </p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>賞</th>
+                                <th>品名</th>
+                                <th>本数</th>
+                                <th>魅力 / 狙い</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #fff5f8;">
+                                <td>A賞</td>
+                                <td>ツーショットチェキ</td>
+                                <td><strong>3本</strong></td>
+                                <td>その場で撮影できる「体験」の提供。</td>
+                            </tr>
+                            <tr>
+                                <td>B賞</td>
+                                <td>アクリルスタンド</td>
+                                <td><strong>17本</strong></td>
+                                <td>定番人気グッズ。当選確率UPで満足度向上。</td>
+                            </tr>
+                            <tr>
+                                <td>C賞</td>
+                                <td>写真ステッカー<br><small>(3種セット)</small></td>
+                                <td><strong>20本</strong></td>
+                                <td>
+                                    ヤンジャンオフショット3種を選びましょう<br>
+                                    <div style="display: flex; gap: 5px; margin-top: 8px;">
+                                        <img src="images/写真ステッカー1.jpg"
+                                            style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd;">
+                                        <img src="images/写真ステッカー2.jpg"
+                                            style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd;">
+                                        <img src="images/写真ステッカー3.jpg"
+                                            style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>D賞</td>
+                                <td>イラストステッカー Sサイズ<br><small>(4枚セット)</small></td>
+                                <td><strong>30本</strong></td>
+                                <td>4枚入りのボリューム感でお得さを演出。制作数調整済み。</td>
+                            </tr>
+                            <tr>
+                                <td>E賞</td>
+                                <td>DECOチョコ<br><small>(10セット)</small></td>
+                                <td><strong>10本</strong></td>
+                                <td>撮り下ろし写真入りのチロルチョコ3個セット。</td>
+                            </tr>
+                            <tr>
+                                <td>F賞</td>
+                                <td>ブロマイド2種<br><small>(20セット)</small></td>
+                                <td><strong>20本</strong></td>
+                                <td>
+                                    オフショットブロマイド (全2種ランダム)<br>
+                                    <div style="display: flex; gap: 5px; margin-top: 8px;">
+                                        <img src="images/ブロマイド1.jpg"
+                                            style="width: 80px; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd;">
+                                        <img src="images/ブロマイド2.jpg"
+                                            style="width: 80px; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd;">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>コラボメニュー施策 (NICONA連携)</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>種別</th>
+                                <th>メニュー名(案)</th>
+                                <th>価格(案)</th>
+                                <th>特徴</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2"><strong>Special</strong></td>
+                                <td>バレンタインに会えるなんてうれちいラテ <span style="color:red; font-size:0.8em;">(決定)</span></td>
+                                <td>¥1,000</td>
+                                <td>ココアベースのラテ。<br>「チキ」→「うれちい」に変更。ホット/アイス選択可。</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="font-size: 0.85rem; color: #666; padding-left: 20px;">
+                                    ※その他、通常メニューも提供予定<br>
+                                    ・ブレンドコーヒー (Hot/Ice)<br>
+                                    ・カフェラテ (Hot/Ice)<br>
+                                    ・紅茶 (Hot/Ice) etc.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="decision-grid">
+                    <div class="decision-box">
+                        <div class="decision-title">
+                            交換所オペレーション
+                            <span class="status-badge urgent">要検討</span>
+                        </div>
+                        <p class="desc">カプセル回収箱設置場所と、混雑時の引換列の誘導手順。</p>
+                    </div>
+                    <div class="decision-box">
+                        <div class="decision-title">
+                            引換券制作
+                            <span class="status-badge pending">未着手</span>
+                        </div>
+                        <p class="desc">A〜D賞のラベル出力・カット作業。カプセル詰め。</p>
+                    </div>
+                </div>
             </div>
-            <div style="text-align: center; margin-top: 1.5rem;">
-              <a href="https://yjump.jp/4pSVpif" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-                style="display: inline-block; width: auto; padding: 1rem 2rem;">
-                デジタル写真集購入はこちら
-              </a>
+
+            <!-- Section 2: Scrip Layout -->
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-number">02</div>
+                    <h2>進行と運営詳細</h2>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>タイムライン詳細</h3>
+                    <div class="timeline-view">
+                        <div class="timeline-item">
+                            <div class="time-col">13:00 - 13:15</div>
+                            <div class="event-title">開場・フリータイム</div>
+                            <div class="event-detail">
+                                <strong>■ 会場内コンテンツFULL稼働</strong><br>
+                                ・4K動画 (音声OFF): モニターでループ再生開始。<br>
+                                ・ガチャ & コラボドリンク: 開場直後から販売スタート。<br>
+                                ・質問箱: 受付にて記入・投函。<br>
+                                <span style="color: #d32f2f;">※お客様にはドリンクを飲みながら動画やガチャを楽しんで待っていただくスタイル。</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time-col">13:15 - 13:25</div>
+                            <div class="event-title">開演・オープニング</div>
+                            <div class="event-detail">
+                                十河による事前案内後に呼び込み？<br>
+                                BGMは不要？<br>
+                                <span style="color: #d32f2f;">※お客さんの立ち位置要検討</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time-col">13:25 - 13:45</div>
+                            <div class="event-title">トーク前半：</div>
+                            <div class="event-detail">
+                                本人の撮影裏話をモニターと実際の画面を見ながらトーク
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time-col">13:45 - 13:55</div>
+                            <div class="event-title">トーク後半：質疑応答</div>
+                            <div class="event-detail">
+                                <strong>■ 事前SNS募集形式に変更</strong><span style="color:red;">(New)</span><br>
+                                当日の時間短縮のため、事前に「#谷口彩菜」で募集した質問に回答。<br>
+                                <strong>★全員プレゼント企画:</strong> <br>
+                                質問採用者には「デコチェキ（旧ガチャ景品）」、<br>
+                                その他の参加者全員にもお菓子セットなどを配布。（満足度向上施策）
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time-col">13:55 - 14:00</div>
+                            <div class="event-title">写真撮影タイム <span style="color:red;">(New)</span></div>
+                            <div class="event-detail">
+                                トーク中の撮影はNGとし、この時間に集中して撮影。<br>
+                                SNS投稿OK（ハッシュタグ「#谷口彩菜」を推奨）。
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time-col">14:00 - 14:30</div>
+                            <div class="event-title">特典会 (サイン・撮影)</div>
+                            <div class="event-detail">
+                                ①A賞当選者 (チェキ) → ②<strong>受付配布の「番号カード」順</strong> で誘導。<br>
+                                <strong>※サイン時の宛名は、番号カード裏面にお客様自身で記入。</strong><br>
+                                ※本誌忘れの場合は「手にサイン」等の特別対応。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strategy-card" style="margin-top: 2rem;">
+                        <h3>当日用意すべき備品リスト</h3>
+                        <ul style="list-style: none; padding-left: 0.5rem;">
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                                <span
+                                    style="display:inline-block; width: 6px; height: 6px; background: #C5A059; border-radius: 50%; margin-right: 10px;"></span>
+                                <strong>モニター</strong>
+                                <span style="margin-left: 10px; font-size: 0.9rem; color: #666;">(GATEから持ち運び)</span>
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                                <span
+                                    style="display:inline-block; width: 6px; height: 6px; background: #C5A059; border-radius: 50%; margin-right: 10px;"></span>
+                                <strong>番号カード</strong>
+                                <span
+                                    style="margin-left: 10px; font-size: 0.9rem; color: #666;">(受付配布用：サイン会整列などに使用)</span>
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                                <span
+                                    style="display:inline-block; width: 6px; height: 6px; background: #C5A059; border-radius: 50%; margin-right: 10px;"></span>
+                                <strong>質問ボックス</strong> <span style="color:red; font-size:0.8em;">(New)</span>
+                                <span style="margin-left: 10px; font-size: 0.9rem; color: #666;">(質問用紙投函用)</span>
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: center;">
+                                <span
+                                    style="display:inline-block; width: 6px; height: 6px; background: #C5A059; border-radius: 50%; margin-right: 10px;"></span>
+                                <strong>ペン（30本程度）</strong> <span style="color:red; font-size:0.8em;">(New)</span>
+                                <span style="margin-left: 10px; font-size: 0.9rem; color: #666;">(質問記入・宛名記入用)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="decision-grid">
+                    <div class="decision-box">
+                        <div class="decision-title">
+                            本人登場演出
+                            <span class="status-badge urgent">検討中</span>
+                        </div>
+                        <p class="desc">影アナからの呼び込み形式で決定か？<br>客席通路を通る際の安全確保。</p>
+                    </div>
+                    <div class="decision-box">
+                        <div class="decision-title">
+                            機材チェック
+                            <span class="status-badge check">確認</span>
+                        </div>
+                        <p class="desc">4Kモニタ接続と再生テスト (HDMI等)。<br>予備PCの準備。</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+
+        </main>
     </div>
-  </section>
 
-  <!-- Schedule Section -->
-  <section class="schedule section" id="schedule">
-    <div class="container">
-      <h2 class="section-title fade-in">Event Schedule</h2>
-      <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--space-2xl);">※ 所要時間：約90分</p>
-      <div class="timeline">
-        <div class="timeline-item fade-in">
-          <div class="timeline-time"><span>13:00</span></div>
-          <div class="timeline-content">
-            <h3>開場・受付開始</h3>
-            <p>受付にてチケット確認。ガチャガチャコーナーもお楽しみいただけます！</p>
-          </div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-time"><span>13:15</span></div>
-          <div class="timeline-content">
-            <h3>オープニング</h3>
-            <p>谷口彩菜登壇。写真集への想いや見どころをご紹介。</p>
-          </div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-time"><span>13:25</span></div>
-          <div class="timeline-content">
-            <h3>📣 スペシャルトークショー</h3>
-            <p>撮影地でのエピソード、制作の裏話など、ここでしか聞けないスペシャルトーク！質問コーナーも。</p>
-          </div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-time"><span>13:55</span></div>
-          <div class="timeline-content">
-            <h3>エンディング & フォトタイム</h3>
-            <p>終了のご挨拶。ガチャガチャ・物販コーナーは引き続きお楽しみいただけます。</p>
-          </div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-time"><span>14:25</span></div>
-          <div class="timeline-content">
-            <h3>✍️ サイン会</h3>
-            <p>その場で本に谷口彩菜がサインいたします。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Benefits Section -->
-  <section class="benefits section" id="benefits">
-    <div class="container">
-      <h2 class="section-title fade-in">参加特典</h2>
-      <div class="benefits-grid">
-
-
-        <div class="benefit-card fade-in">
-          <div class="benefit-icon">🎤</div>
-          <h3>スペシャルトークショー</h3>
-          <p>撮影秘話や裏話など、ここでしか聞けない貴重なトークをお届け。</p>
-        </div>
-        <div class="benefit-card fade-in">
-          <div class="benefit-icon">🎰</div>
-          <h3>ガチャガチャ</h3>
-          <p>限定グッズが当たるガチャガチャコーナー！レアアイテムをゲットしよう。</p>
-        </div>
-
-
-        <div class="benefit-card fade-in">
-          <div class="benefit-icon">☕</div>
-          <h3>コラボドリンク</h3>
-          <p>ニコナコーヒーとのコラボレーション限定ドリンクをお楽しみいただけます。</p>
-        </div>
-        <div class="benefit-card featured-benefit fade-in">
-          <div class="benefit-icon">📚</div>
-          <h3>【特別企画】本誌サイン会</h3>
-          <p style="font-size: 1rem; font-weight: bold; color: var(--color-primary-dark); margin-bottom: 1rem;">
-            下記の2点をお持ちの方限定！
-          </p>
-          <div
-            style="text-align: left; background: rgba(255,255,255,0.8); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-            <p style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;">
-              <span style="color: var(--color-primary);">✅</span>
-              <span><strong>デジタル写真集</strong>購入<br>
-                <small>【谷口彩菜 デジタル限定 YJ PHOTO BOOK】</small></span>
-            </p>
-            <p style="margin: 0.5rem 0 0 1.5rem; font-size: 0.85rem; color: var(--color-text-muted);">
-              ※当日はスマホ等で電子書籍アプリの「ライブラリ画面」または「閲覧画面」をご提示ください。
-            </p>
-            <p style="margin-bottom: 0; display: flex; align-items: flex-start; gap: 0.5rem; margin-top: 1rem;">
-              <span style="color: var(--color-primary);">✅</span>
-              <span><strong>本誌</strong>持参<br>
-                <small>週刊ヤングジャンプ 8号</small></span>
-            </p>
-          </div>
-          <p style="font-size: 0.9rem;">当日、上記をお持ちいただいた方には、<br>その場で本誌に直筆サインを入れさせていただきます。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ticket Section -->
-  <section class="ticket section" id="ticket">
-    <div class="container">
-      <h2 class="section-title fade-in">チケット情報（仮）</h2>
-      <div class="ticket-cards">
-        <div class="ticket-card" style="max-width: 400px; width: 100%; display: flex; flex-direction: column;">
-          <h3 class="ticket-name">イベント参加チケット</h3>
-          <p class="ticket-price">¥2,000<span>（税込）</span></p>
-          <p
-            style="text-align: center; color: var(--color-accent); font-weight: bold; margin: 1rem 0; font-size: 1.1rem;">
-            ※当日、会場受付にて現金のみ
-          </p>
-          <ul class="ticket-features">
-            <li>イベント入場券</li>
-            <li>スペシャルトークショー観覧</li>
-
-            <li
-              style="color: var(--color-secondary); font-weight: bold; border-top: 1px dashed var(--color-secondary); margin-top: 0.5rem; padding-top: 0.5rem;">
-              <span>📚 デジタル写真集購入＆本誌持参でサイン特典あり！</span>
-            </li>
-          </ul>
-          <div style="text-align: center; margin-top: auto; padding-top: 1rem;">
-            <a href="https://tiget.net/events/461310" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-              style="display: inline-block; width: auto; padding: 1rem 2rem;">
-              チケット取り置きはこちら
-            </a>
-          </div>
-        </div>
-        <div class="ticket-card"
-          style="max-width: 400px; width: 100%; background: linear-gradient(135deg, #fff5f8 0%, #ffe8f0 100%); display: flex; flex-direction: column;">
-          <div
-            style="display: flex; justify-content: center; align-items: flex-start; gap: 0.5rem; margin-bottom: 1rem;">
-            <img src="images/photobook-cover.jpg" alt="谷口彩菜 写真集表紙"
-              style="width: 120px; height: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-            <img src="images/photobook-preview.jpg" alt="谷口彩菜 写真集プレビュー"
-              style="width: 100px; height: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-          </div>
-          <h3 class="ticket-name" style="color: var(--color-primary); font-size: 0.95rem; line-height: 1.5;">
-            【デジタル限定 YJ PHOTO BOOK】<br>谷口彩菜写真集「僕の主人公はきみだ！」
-          </h3>
-          <p
-            style="text-align: center; font-size: 1.1rem; font-weight: bold; margin: 0.5rem 0; color: var(--color-text);">
-            谷口彩菜
-          </p>
-          <div style="text-align: center; margin: 0.5rem 0; font-size: 0.85rem; color: var(--color-text-muted);">
-            <p style="margin: 0.3rem 0;"><strong>発売日</strong>　2026.01.22</p>
-            <p style="margin: 0.3rem 0;"><strong>撮影</strong>　HIROKAZU</p>
-          </div>
-          <p
-            style="text-align: center; color: var(--color-secondary); font-weight: bold; font-size: 0.95rem; margin: 0.5rem 0;">
-            ✨ ヤンジャン！限定アザーカット付き！
-          </p>
-          <div style="text-align: center; margin-top: auto; padding-top: 1rem;">
-            <a href="https://yjump.jp/4pSVpif" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-              style="display: inline-block; width: auto; padding: 1rem 2rem;">
-              購入はこちら
-            </a>
-          </div>
-        </div>
-      </div>
-      <p
-        style="text-align: center; margin-top: var(--space-xl); color: var(--color-text-muted); font-size: var(--font-size-sm);">
-        ※ 上記は仮の内容です。価格・特典は変更になる場合があります。
-      </p>
-    </div>
-  </section>
-
-  <!-- Access Section -->
-  <section class="access section" id="access">
-    <div class="container">
-      <h2 class="section-title fade-in">アクセス</h2>
-      <div class="access-grid">
-        <div class="access-info fade-in-left">
-          <h3>会場</h3>
-          <p class="venue-name">ニコナコーヒー</p>
-          <p class="venue-address">
-            〒151-0051<br>
-            東京都渋谷区千駄ヶ谷2-37-8<br>
-            五月女ビル 1F
-          </p>
-          <div class="access-routes">
-            <div class="route">
-              <div class="route-icon">🚃</div>
-              <div class="route-text">
-                <strong>東京メトロ副都心線</strong>
-                <span>北参道駅より徒歩約6分</span>
-              </div>
-            </div>
-            <div class="route">
-              <div class="route-icon">🚃</div>
-              <div class="route-text">
-                <strong>都営大江戸線</strong>
-                <span>国立競技場駅より徒歩約6分</span>
-              </div>
-            </div>
-            <div class="route">
-              <div class="route-icon">🚃</div>
-              <div class="route-text">
-                <strong>JR中央線</strong>
-                <span>千駄ケ谷駅より徒歩約8分</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="access-map fade-in-right">
-          <div class="map-placeholder">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5!2d139.7080!3d35.6780!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQwJzQxLjAiTiAxMznCsDQyJzI5LjAiRQ!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ニコナコーヒー 地図">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="faq section" id="faq">
-    <div class="container">
-      <h2 class="section-title fade-in">よくあるご質問</h2>
-      <div class="faq-list">
-        <div class="faq-item fade-in">
-          <button class="faq-question">
-            <span>チケットのキャンセル・払い戻しはできますか？</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>お客様都合によるキャンセル・払い戻しは承っておりません。イベント中止の場合のみ、全額払い戻しいたします。</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <button class="faq-question">
-            <span>チケットの購入方法は？</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>チケットは当日、会場受付にて現金での販売のみとなります。事前予約や前売り券の販売はございません。</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <button class="faq-question">
-            <span>プレゼントを渡すことはできますか？</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>生もの・現金・貴金属類はお受けできませんのでご注意ください。</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <button class="faq-question">
-            <span>撮影や録音は可能ですか？</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>写真撮影は可能です。動画は禁止とさせていただきます。</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <button class="faq-question">
-            <span>入場時間に遅れた場合はどうなりますか？</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>途中入場可能ですが、一部のコンテンツにご参加いただけない場合がございます。お時間に余裕を持ってお越しください。</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <button class="faq-question">
-            <span>本誌へのサインについて詳しく教えてください</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>
-              以下の2点が条件となります。<br><br>
-              1. <strong>デジタル写真集の購入</strong><br>
-              【谷口彩菜 デジタル限定 YJ PHOTO BOOK】<br><br>
-              2. <strong>本誌のご持参</strong><br>
-              【週刊ヤングジャンプ 8号】<br><br>
-              上記2点を満たす方に、ご持参いただいた本誌へサインいたします。
-            </p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <button class="faq-question">
-            <span>デジタル写真集の購入証明はどうすればいいですか？</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>
-              当日、受付またはサイン会にて、お手持ちのスマートフォン・タブレット等で<strong>ヤングジャンプのアプリ</strong>を起動し、
-              写真集の「表紙」または「ライブラリ（購入済み）画面」をスタッフにご提示ください。<br>
-              <span
-                style="font-size: 0.9em; color: var(--color-text-muted);">※スクリーンショットでの確認は原則不可とさせていただきます。アプリ画面のご準備をお願いいたします。</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">GATE</div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 GATE. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
 </body>
 
 </html>
